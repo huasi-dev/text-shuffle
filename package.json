@@ -1,0 +1,15 @@
+{
+  "name": "text-shuffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Carlos Difilippo",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "5.0.4"
+  }
+}
