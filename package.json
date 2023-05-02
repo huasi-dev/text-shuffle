@@ -1,17 +1,35 @@
 {
   "name": "@huasi/text-shuffle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huasi-software/text-shuffle.git"
+  },
+  "author": "cadifilippo@gmail.com",
+  "contributors": [
+    "luciaaldanacastillo@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "www.huasi.dev",
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "Carlos Difilippo",
-  "license": "ISC",
   "devDependencies": {
     "typescript": "5.0.4"
-  }
+  },
+  "keywords": [
+    "text",
+    "shuffle",
+    "typescript",
+    "javascript",
+    "js",
+    "ts",
+    "effect",
+    "write",
+    "animation"
+  ]
 }
