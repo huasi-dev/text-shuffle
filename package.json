@@ -1,6 +1,6 @@
 {
   "name": "@huasi/text-shuffle",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "private": false,
   "main": "dist/index.js",
@@ -8,6 +8,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/huasi-software/text-shuffle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/huasi-software/text-shuffle/issues",
+    "email": "cadifilippo@gmail.com"
   },
   "author": "cadifilippo@gmail.com",
   "contributors": [
