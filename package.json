@@ -17,9 +17,6 @@
   "contributors": [
     "luciaaldanacastillo@gmail.com"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "license": "MIT",
   "homepage": "www.huasi.dev",
   "scripts": {
