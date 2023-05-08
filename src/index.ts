@@ -29,18 +29,14 @@ const shuffle = ({
   let _now = Date.now();
   let _start = Date.now();
 
-  // text indices
   let _tindices = _text.map((t, i) => i);
 
-  // flip direction when hiding
   if (animation == animations.HIDE) {
     if (direction == directions.LEFT) direction = directions.RIGHT;
     else if (direction == directions.RIGHT) direction = directions.LEFT;
   }
 
-  // reverse text indices
   if (direction == directions.LEFT) _tindices.reverse();
-  // randomise text indices
   if (direction == directions.RANDOM) _tindices = random(_tindices);
 
   let uLen, vLen;
@@ -57,19 +53,13 @@ const shuffle = ({
     _now = Date.now();
     output = '';
 
-    // t = linear time
     t = ((_now - _start) * 0.001) / duration;
     if (animation == animations.HIDE) t = 1 - t;
 
-    // u = shuffle curve
-    // u starts at delay
     u = clamp01(t - delay);
     u = quartOut(u);
 
-    // v = resolve curve
-    // v starts at u + it's own delay
     v = clamp01(t - delay - delayResolve);
-    // v duration is deducted from it's delay (increase speed)
     v = v * (1 / (1 - delayResolve));
     v = quadInOut(v);
 
@@ -86,9 +76,7 @@ const shuffle = ({
       output = `${output}${glyph}`;
     }
 
-    // loop until u reaches 0
     if (animation == animations.HIDE) complete = u <= 0;
-    // loop until u reaches 1
     else complete = u >= 1;
 
     if (!complete) requestAnimationFrame(_onUpdate);
