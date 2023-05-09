@@ -7,10 +7,10 @@
   "types": "dist/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/huasi-software/text-shuffle.git"
+    "url": "https://github.com/huasi-dev/text-shuffle.git"
   },
   "bugs": {
-    "url": "https://github.com/huasi-software/text-shuffle/issues",
+    "url": "https://github.com/huasi-dev/text-shuffle/issues",
     "email": "cadifilippo@gmail.com"
   },
   "author": "cadifilippo@gmail.com",
